@@ -1,0 +1,353 @@
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-display: swap; 
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"),
+  url("../fonts/roboto-v30-latin-regular.woff") format("woff");
+  
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-display: swap; 
+  src: url("../fonts/roboto-v30-latin-500.woff2") format("woff2"),
+  url("../fonts/roboto-v30-latin-500.woff") format("woff");
+  
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-display: swap; 
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2"), 
+  url("../fonts/roboto-v30-latin-700.woff") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+body {
+  font-family: "Roboto";
+  font-weight: 400;
+  height: 100%;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1340px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+
+
+
+/* Start of Site-Header's Styles  */
+
+.site-header {
+  padding-top: 40px;
+  padding-bottom: 45px;
+  background-color: #F3D7B7;
+}
+
+.site-header__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  gap: 40px;
+  list-style-type: none;
+}
+
+.site-header__list__item__link {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Finish of Site-Header's Styles  */
+
+
+
+
+
+
+/* Start of Section Hero's Styles  */
+
+.hero {
+  padding-bottom: 230px;
+  background-color:#F3D7B7 ;
+}
+
+.hero::before {
+  position: absolute;
+  z-index: 2;
+  top: 50px;
+  left: 570px;
+  content: "";
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  background-image: url("images/circleimage.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 0px) calc(50% - 0px);
+}
+
+.hero__box {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.hero__inner-box {
+  width: 464px;
+  margin-left: 100px;
+}
+
+.hero__title {
+  font-size: 64px;
+  font-weight: 700;
+  margin-top: 111px;
+  margin-bottom: 24px;
+  line-height: normal;
+  color: #000;
+}
+
+.hero__text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 34px;
+  line-height: 24px;
+  color: #000;
+}
+
+.hero__text__wrapper {
+  width: 372px;
+}
+
+.hero__img {
+  position: absolute;
+  top: 0px;
+  right: -20px;
+}
+
+.hero__img::before {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  content: "";
+  display: inline-block;
+  background-image: url("images/circleimage.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 50px) calc(50% - 50px);
+}
+
+/* Finish of Section Hero's Styles  */
+
+
+
+
+
+
+/* Start of Section Work's Styles  */
+
+.work {
+  width: 1340px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 289px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #0a775f;
+  background-image: url("./images/line.svg"),url("./images/firstcoffe.svg");
+  background-repeat: no-repeat,no-repeat;
+  background-position: calc(50% + -160px) calc(50% - 185px),calc(50% + 505px) calc(50% - 280px);
+}
+
+.work__title {
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 160px;
+  line-height: normal;
+  font-variant: all-small-caps;
+  text-align: center;
+  color: #FFF;
+}
+
+.work__list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.work__list__item {
+  position: relative;
+  width: 425px;
+  margin-bottom: 60px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  background-color: #F8F8F2;
+}
+
+.work__list__item::before {
+  position: absolute;
+  top: -80px;
+  left: 0px;
+  content: "";
+  display: inline-block;
+  background-image: url("./images/square.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 0px) calc(50% - 0px);
+  width: 60px;
+  height: 60px;
+}
+
+.work__list__item__text {
+  font-size: 64px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 45px;
+  margin-left: 340px;
+  line-height: normal;
+  font-variant: all-small-caps;
+  color: #333;
+}
+
+.work__list__item__title__wrapper {
+  width: 231px;
+}
+
+.work__list__item__title {
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: normal;
+  color: #333;
+}
+
+.work__list__item__desc {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 28px; 
+  color: #333;
+}
+
+.work__list__item__desc__wrapper {
+  width: 385px;
+}
+
+.work__link {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px 24px;
+  border-radius: 100px;
+  background: #C99B67;
+  text-decoration: none;
+  line-height: normal;
+  color: #FFF;
+  gap: 10px;
+}
+
+.work__link__wrapper {
+  text-align: center;
+}
+
+/* Finish of Section Work's Styles  */
+
+
+
+
+
+
+/* Start of Footer's Styles  */
+
+.site-footer {
+  margin-top: 50px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  background-color:#F3D7B7 ;
+}
+
+.site-footer__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-footer__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+  gap: 40px;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.site-footer__list__item__link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  color: #333;
+}
+
+.site-footer__next__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+  gap: 30px;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+/* Finish of Footer's Styles  */
